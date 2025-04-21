@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notion Timer Widget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer-widget">
+            <div class="timer-display">
+                <span id="minutes">25</span>:<span id="seconds">00</span>
+            </div>
+            <div class="timer-controls">
+                <button id="pomodoro" class="timer-btn active">25:00</button>
+                <button id="short-break" class="timer-btn">05:00</button>
+                <button id="long-break" class="timer-btn">15:00</button>
+            </div>
+            <div class="action-controls">
+                <button id="start-btn" class="action-btn">Start</button>
+                <button id="pause-btn" class="action-btn hidden">Pause</button>
+                <button id="reset-btn" class="action-btn">Reset</button>
+            </div>
+        </div>
+        <div class="theme-toggle">
+            <button id="theme-btn">Toggle Theme</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

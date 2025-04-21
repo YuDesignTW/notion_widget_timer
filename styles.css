@@ -1,0 +1,163 @@
+:root {
+    /* 浅色主题 */
+    --bg-color-light: #ffffff;
+    --text-color-light: #333333;
+    --btn-bg-light: #f0f0f0;
+    --btn-text-light: #333333;
+    --btn-active-bg-light: #e0e0e0;
+    --btn-hover-light: #d0d0d0;
+    
+    /* 深色主题 */
+    --bg-color-dark: #2c2c2e;
+    --text-color-dark: #ffffff;
+    --btn-bg-dark: #3a3a3c;
+    --btn-text-dark: #ffffff;
+    --btn-active-bg-dark: #515154;
+    --btn-hover-dark: #636366;
+    
+    /* 默认使用浅色主题 */
+    --bg-color: var(--bg-color-light);
+    --text-color: var(--text-color-light);
+    --btn-bg: var(--btn-bg-light);
+    --btn-text: var(--btn-text-light);
+    --btn-active-bg: var(--btn-active-bg-light);
+    --btn-hover: var(--btn-hover-light);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme {
+    --bg-color: var(--bg-color-dark);
+    --text-color: var(--text-color-dark);
+    --btn-bg: var(--btn-bg-dark);
+    --btn-text: var(--btn-text-dark);
+    --btn-active-bg: var(--btn-active-bg-dark);
+    --btn-hover: var(--btn-hover-dark);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.timer-widget {
+    background-color: var(--bg-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.timer-display {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 20px 0;
+    color: var(--text-color);
+}
+
+.timer-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.timer-btn {
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    flex: 1;
+    margin: 0 5px;
+}
+
+.timer-btn:hover {
+    background-color: var(--btn-hover);
+}
+
+.timer-btn.active {
+    background-color: var(--btn-active-bg);
+    font-weight: bold;
+}
+
+.action-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.action-btn {
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.action-btn:hover {
+    background-color: var(--btn-hover);
+}
+
+#start-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#start-btn:hover {
+    background-color: #45a049;
+}
+
+#pause-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+#pause-btn:hover {
+    background-color: #d32f2f;
+}
+
+.hidden {
+    display: none;
+}
+
+.theme-toggle {
+    margin-top: 10px;
+}
+
+#theme-btn {
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#theme-btn:hover {
+    background-color: var(--btn-hover);
+} 
