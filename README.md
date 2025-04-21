@@ -29,14 +29,3 @@ To test this widget locally, simply open the `index.html` file in your browser.
 2. Upload these files to the repository
 3. Enable GitHub Pages in the repository settings
 4. Use the generated URL to embed the widget in Notion
-
-### Using Netlify or Vercel (Free)
-
-1. Sign up for an account on Netlify or Vercel
-2. Connect your GitHub repository or upload these files directly
-3. Deploy the website
-4. Use the generated URL to embed the widget in Notion
-
-## Customization
-
-You can customize the appearance and behavior of the widget by modifying the `styles.css` and `script.js` files. 
